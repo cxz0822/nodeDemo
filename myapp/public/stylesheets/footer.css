@@ -1,0 +1,432 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+}
+footer {
+  display: block;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul,
+li {
+  list-style: none;
+}
+.footerDT {
+  width: 100%;
+  clear: both;
+  height: 88px;
+}
+footer {
+  left: 0;
+  bottom: 0;
+  min-width: 1200px;
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+}
+footer .content {
+  width: 100%;
+  height: 88px;
+}
+footer .content .content-item .title {
+  margin: 22px 0 18px;
+  font-size: 16px;
+  color: #ced3db;
+}
+footer .content .content-item span {
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-right: 35px;
+  display: inline-block;
+  white-space: pre-wrap;
+  color: #50555d;
+}
+footer .content .content-item span a {
+  color: #ced3db;
+}
+footer .content .about-us {
+  padding-bottom: 0 !important;
+}
+footer .content .friendly-link {
+  width: 1200px;
+  margin: 0 auto;
+}
+footer .content .content-footer-link ul {
+  width: 292px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 0;
+}
+footer .content .content-footer-link ul li {
+  float: left;
+  font-size: 12px;
+  color: #ced3db;
+  list-style-type: none;
+}
+footer .content .trademark {
+  width: 100%;
+  font-size: 12px;
+  white-space: pre-wrap;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #ced3db;
+}
+footer .content .trademark img {
+  margin-top: -11px;
+}
+footer .footer-bodys {
+  overflow: hidden;
+  height: 88px;
+  width: 100%;
+  background: #2c333f;
+  color: #50555d;
+}
+footer .footer-bodys .gate {
+  padding-top: 20px;
+}
+footer .footer-bodys .gate .noline {
+  border: none;
+}
+footer .footer-bodys .gate li:hover {
+  color: #2cb82c;
+}
+footer .footer-bodys li {
+  color: #ced3db;
+  font-size: 12px;
+  cursor: pointer;
+}
+footer .footer-bodys li span {
+  color: #50555d;
+  margin: 0!important;
+  padding: 0 12px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+footer .footer-bodys p {
+  float: left;
+  font-size: 12px;
+  line-height: 24px;
+}
+.indexFooter .footer-bodys .gate li {
+  color: #ced3db;
+}
+.indexFooter .footer-bodys .gate .noline {
+  border-right: none;
+}
+.indexFooter .footer-bodys .trademark {
+  color: #ced3db;
+}
+/*�Ҳ����*/
+.rightSide {
+  position: absolute;
+  width: 40px;
+  top: 372px;
+  left: 1210px;
+  z-index: 100;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.rightSide .zxCenter {
+  position: relative;
+}
+.rightSide .consult_center,
+.rightSide .online_consult,
+.rightSide .phone_consult,
+.rightSide .sideWeixinBox,
+.rightSide .sideWeiboBox,
+.rightSide .feedback,
+.rightSide .h_top {
+  background-color: #fff;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+.rightSide .consult_center a,
+.rightSide .online_consult a,
+.rightSide .phone_consult a,
+.rightSide .sideWeixinBox a,
+.rightSide .sideWeiboBox a,
+.rightSide .feedback a,
+.rightSide .h_top a {
+  text-decoration: none;
+}
+.rightSide .consult_center em,
+.rightSide .online_consult em,
+.rightSide .phone_consult em,
+.rightSide .sideWeixinBox em,
+.rightSide .sideWeiboBox em,
+.rightSide .feedback em,
+.rightSide .h_top em {
+  display: block;
+}
+.rightSide .consult_center span,
+.rightSide .online_consult span,
+.rightSide .phone_consult span,
+.rightSide .sideWeixinBox span,
+.rightSide .sideWeiboBox span,
+.rightSide .feedback span,
+.rightSide .h_top span {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+}
+.rightSide .consult_center:hover,
+.rightSide .online_consult:hover,
+.rightSide .phone_consult:hover,
+.rightSide .sideWeixinBox:hover,
+.rightSide .sideWeiboBox:hover,
+.rightSide .feedback:hover,
+.rightSide .h_top:hover {
+  background-color: #5fcd5a!important;
+}
+.rightSide .online_consult,
+.rightSide .feedback {
+  position: relative;
+  padding-left: 8px;
+  transform-origin: right;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.rightSide .online_consult a,
+.rightSide .feedback a {
+  height: 30px;
+}
+.rightSide .online_consult span,
+.rightSide .feedback span {
+  float: left;
+  padding-right: 10px;
+}
+.rightSide .online_consult em,
+.rightSide .feedback em {
+  float: right;
+  width: 24px;
+  height: 20px;
+}
+.rightSide .online_consult .online_consult_hover,
+.rightSide .feedback .online_consult_hover,
+.rightSide .online_consult .feedback_hover,
+.rightSide .feedback .feedback_hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 40px;
+  display: none;
+  background-color: #5fcd5a;
+}
+.rightSide .online_consult .online_consult_hover span,
+.rightSide .feedback .online_consult_hover span,
+.rightSide .online_consult .feedback_hover span,
+.rightSide .feedback .feedback_hover span {
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 10px;
+  line-height: 40px;
+}
+.rightSide .online_consult .online_consult_hover em,
+.rightSide .feedback .online_consult_hover em,
+.rightSide .online_consult .feedback_hover em,
+.rightSide .feedback .feedback_hover em {
+  margin: 10px;
+  margin-left: 0;
+}
+.rightSide .online_consult {
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.rightSide .online_consult em {
+  background: url('../images/header/zaixianzixun.png') no-repeat center center;
+}
+.rightSide .online_consult:hover .online_consult_hover {
+  display: block;
+}
+.rightSide .online_consult_hover {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.rightSide .online_consult_hover em {
+  background: url('../images/header/zaixianzixun_hover.png') no-repeat center center;
+}
+.rightSide .feedback {
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.rightSide .feedback em {
+  background: url('../images/header/yijian_moren.png') no-repeat center center;
+}
+.rightSide .feedback:hover .feedback_hover {
+  display: block;
+}
+.rightSide .feedback_hover {
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.rightSide .feedback_hover em {
+  background: url('../images/header/yijian_hover.png') no-repeat center center;
+}
+.rightSide .phone_consult {
+  position: relative;
+}
+.rightSide .phone_consult em {
+  float: right;
+  width: 22px;
+  height: 22px;
+  background: url('../images/header/dianhua.png') no-repeat center center;
+}
+.rightSide .phone_consult .phone_consult_hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 40px;
+  display: none;
+  background-color: #5fcd5a;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.rightSide .phone_consult .phone_consult_hover .phone_number {
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 10px;
+  line-height: 40px;
+}
+.rightSide .phone_consult .phone_consult_hover em {
+  margin: 10px;
+  margin-left: 0;
+  background: url('../images/header/dianhua_hover.png') no-repeat center center;
+}
+.rightSide .phone_consult:hover .phone_consult_hover {
+  display: block;
+}
+.rightSide .sideWeixinErma,
+.rightSide .sideWeiboErma {
+  position: absolute;
+  z-index: 10;
+  padding: 10px 10px 4px 10px;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  right: 50px;
+  bottom: 40px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.rightSide .sideWeixinErma > img,
+.rightSide .sideWeiboErma > img {
+  width: 58px;
+  display: block;
+}
+.rightSide .sideWeixinErma p,
+.rightSide .sideWeiboErma p {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+  line-height: 20px;
+}
+.rightSide .sideWeixinErma .sideSanjiao,
+.rightSide .sideWeiboErma .sideSanjiao,
+.rightSide .sideWeixinErma .sideSanjiao1,
+.rightSide .sideWeiboErma .sideSanjiao1 {
+  position: absolute;
+  right: -10px;
+  top: 25px;
+}
+.rightSide .sideWeiboErma {
+  bottom: 0px;
+  display: none;
+}
+.rightSide .sideWeixinBox {
+  position: relative;
+}
+.rightSide .sideWeixinBox .sideWeixin em {
+  width: 22px;
+  height: 18px;
+  background: url('../images/header/weixin.png') no-repeat center center;
+}
+.rightSide .sideWeixinBox:hover em {
+  background: url('../images/header/weixin_hover.png') no-repeat center center;
+}
+.rightSide .sideWeiboBox {
+  bottom: 184px;
+  cursor: pointer;
+}
+.rightSide .sideWeiboBox .sideWeibo {
+  width: 100%;
+  height: 100%;
+}
+.rightSide .sideWeiboBox .sideWeibo em {
+  display: block;
+  width: 22px;
+  height: 19px;
+  background: url('../images/header/weibo.png') no-repeat center center;
+}
+.rightSide .sideWeiboBox:hover em {
+  background: url('../images/header/weibo_hover.png') no-repeat center center;
+}
+.rightSide .h_top {
+  background-color: #fff;
+  overflow: hidden;
+  display: none;
+  cursor: pointer;
+  margin-top: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  line-height: 30px;
+}
+.rightSide .h_top em {
+  width: 22px;
+  height: 19px;
+  background: url('../images/header/top.png') no-repeat center center;
+}
+.rightSide .h_top:hover em {
+  background: url('../images/header/top_hover.png') no-repeat center center;
+}

@@ -1,0 +1,1375 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hove,
+a:focus {
+  text-decoration: none;
+}
+.processModal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #000000;
+  opacity: 0.5;
+}
+#timeModal {
+  width: 420px;
+  height: 480px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -240px;
+  margin-left: -210px;
+  z-index: 3;
+}
+#timeModal .modalHeader {
+  padding: 20px;
+  background-color: #fafafa;
+  font-size: 18px;
+}
+#timeModal .modalHeader .payment-modal-close {
+  float: right;
+  cursor: pointer;
+}
+#timeModal .modalBody {
+  padding: 20px 30px 40px;
+}
+#timeModal .modalBody .modalBodyTitle {
+  text-align: center;
+  font-size: 18px;
+  color: #2cb82c;
+}
+#timeModal .modalBody .modalBodyTitle #defen {
+  position: relative;
+  margin-right: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+#timeModal .modalBody .modalBodyTitle #defen img {
+  position: absolute;
+  margin-top: 24px;
+}
+#timeModal .modalBody .modalTitles {
+  margin-top: 18px;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+#timeModal .modalBody .modalTxt {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+#timeModal .modalBody label {
+  position: relative;
+  cursor: pointer;
+}
+#timeModal .modalBody label input {
+  display: none;
+}
+#timeModal .modalBody label .active {
+  width: 14px !important;
+  height: 14px !important;
+  border: 5px solid #2CB82C !important;
+}
+#timeModal .modalBody label .radio-cover {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  vertical-align: middle;
+  display: block;
+  top: 8px;
+}
+#timeModal .modalBody label span {
+  display: inline-block;
+  margin-left: 22px;
+  font-weight: normal;
+  margin-top: 7px;
+  font-size: 12px;
+  color: #999;
+}
+#timeModal .modalBody #getLabel {
+  width: 120px;
+  height: 44px;
+  background-color: #2cb82c;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 44px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 27px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.goprocess {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  display: none;
+}
+.goprocess .rTips {
+  width: 200px;
+  height: 62px;
+  position: fixed;
+  z-index: 9999;
+  top: 47%;
+  left: 49%;
+  margin-left: -100px;
+  margin-top: -31px;
+  line-height: 62px;
+  background: #000;
+  filter: alpha(opacity=50);
+  /*ie*/
+  -moz-opacity: 0.5;
+  -o-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  display: none;
+}
+.goprocess .pay-result-content {
+  position: absolute;
+  width: 420px;
+  left: 50%;
+  top: 20%;
+  margin-left: -210px;
+  padding: 20px 20px 57px;
+  background-color: #fff;
+}
+.goprocess .pay-result-content .pay-result1-close {
+  float: right;
+  cursor: pointer;
+}
+.goprocess .pay-result-content .pay-result-text {
+  width: 305px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  line-height: 26px;
+  margin: 39px auto 0;
+}
+.goprocess .pay-result-content .pay-success-btn {
+  width: 119px;
+  height: 44px;
+  background-color: #2cb82c;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 25px auto 12px;
+}
+.goprocess .pay-result-content .pay-result-hint {
+  text-align: center;
+}
+.goprocess .pay-result-content .pay-result-hint span,
+.goprocess .pay-result-content .pay-result-hint a {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+}
+.goprocess .pay-result-content .pay-result-hint .kefu {
+  margin: 0 3px;
+  color: #2cb82c;
+}
+.process {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.process .processTitle {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 22px 30px;
+  margin-bottom: 20px;
+}
+.process .processTitle p {
+  font-size: 22px;
+  color: #333;
+  line-height: 22px;
+  margin: 0px;
+}
+.process .processBody {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 30px;
+}
+.process .processBody .processNav {
+  text-align: right;
+}
+.process .processBody .processNav img {
+  margin-bottom: 20px;
+}
+.process .processBody .processNav #journal {
+  color: #333333;
+  font-size: 14px;
+  cursor: pointer;
+}
+.process .processBody .processNav #journal:hover {
+  color: #2cb82c;
+}
+.process .processBody .processNav #mianshiClick {
+  color: #333333;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.process .processBody .processNav #mianshiClick:hover {
+  color: #2cb82c;
+}
+.process .processBody .processText {
+  width: 100%;
+  margin-top: 20px;
+}
+.process .processBody .processText .noticeBody {
+  width: 100%;
+}
+.process .processBody .processText .noticeBody .noticeTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.process .processBody .processText .noticeBody .noticeText {
+  font-size: 16px;
+}
+.process .processBody .processText .noticeBody .noticeText img {
+  max-width: 100%;
+}
+.process .processBody .processText .paySuccess {
+  width: 100%;
+  text-align: center;
+  padding: 100px 0px;
+}
+.process .processBody .processText .paySuccess img {
+  margin-top: 10px;
+}
+.process .processBody .processText .paySuccess .paySuccessTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.process .processBody .processText .paySuccess .paySuccessBody {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.process .processBody .processText .signUpTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+.process .processBody .processText .signUpH2 {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.process .processBody .processText .toPage2 {
+  margin-top: 46px;
+}
+.process .processBody .processText .toPage3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.process .processBody .processText .toPage3 span {
+  margin-left: 20px;
+  color: #999;
+  font-size: 14px;
+}
+.process .processBody .processText .details {
+  font-size: 16px;
+  margin-bottom: 14px;
+  line-height: 16px;
+}
+.process .processBody .processText .labales {
+  margin-bottom: 20px;
+  color: #999;
+  font-size: 14px;
+}
+.process .processBody .processText .labales input {
+  margin-left: 20px;
+  height: 38px;
+  border: 1px solid #eeeeee;
+  outline: medium;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 280px;
+}
+.process .processBody .processText .labales span {
+  color: red;
+}
+.process .processBody .processText .labales .ery {
+  display: none;
+  font-size: 14px;
+  color: #FF4012;
+  line-height: 30px;
+  text-indent: 20px;
+  background: url(../images/icons/tanhao.png) no-repeat left center;
+  margin-left: 10px;
+}
+.process .processBody .processText .getSignUp {
+  margin: 0 auto;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #2cb82c;
+  margin-bottom: 11px;
+  display: block;
+  width: 70px;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.process .processBody .processText .interviewResult {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.process .processBody .processText .interviewResult .interviewResultTitle {
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 30px;
+  border-bottom: 1px solid #e7e7e7;
+  margin: 0;
+  font-size: 16px;
+}
+.process .processBody .processText .interviewResult .interviewResultBody {
+  min-height: 136px;
+  padding: 20px 30px;
+}
+.process .processBody .processText .interviewResult .interviewResultBody p {
+  font-size: 14px;
+}
+.process .processBody .processText .interviewResult .mianshiIng {
+  text-align: center;
+  min-height: 190px;
+  line-height: 190px;
+}
+.process .processBody .processText .btns {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #2cb82c;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.process .processBody .processText .examList {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.process .processBody .processText .examList .examListTitle {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.process .processBody .processText .examList .examListTitle li {
+  float: left;
+  font-size: 14px;
+  line-height: 40px;
+}
+.process .processBody .processText .examList .examListTitle .examLi1 {
+  width: 258px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListTitle .examLi2 {
+  width: 100px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListTitle .examLi3 {
+  width: 255px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListTitle .examLi4 {
+  width: 108px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListTitle .examLi5 {
+  width: 190px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListTitle .examLi6 {
+  width: 229px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListBody {
+  width: 100%;
+  overflow: hidden;
+  height: 120px;
+  border: 1px solid #f5f5f5;
+  display: table-cell;
+  vertical-align: middle;
+}
+.process .processBody .processText .examList .examListBody li {
+  float: left;
+  font-size: 14px;
+}
+.process .processBody .processText .examList .examListBody .examLi1 {
+  width: 258px;
+  text-align: center;
+  padding: 0px 40px;
+}
+.process .processBody .processText .examList .examListBody .examLi2 {
+  width: 100px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListBody .examLi3 {
+  width: 255px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListBody .examLi4 {
+  width: 108px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListBody .examLi5 {
+  width: 190px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListBody .examLi6 {
+  width: 227px;
+  text-align: center;
+}
+.process .processBody .processText .examList .examListBody .examLi6 a {
+  background-color: #2cb82c;
+  color: #ffffff;
+  width: 86px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 3px;
+}
+.process .processBody .processText .examList .examBottom p {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.process .processBody .processText .examList .examBottom .examBottomTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.process .processBody .processText .examList .examBottom a {
+  font-size: 16px;
+  color: #2cb82c;
+  margin-right: 50px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.process .processBody .processText .orderTab,
+.process .processBody .processText .orderTabTwo {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.process .processBody .processText .orderTab .instead,
+.process .processBody .processText .orderTabTwo .instead {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.process .processBody .processText .orderTab .tabTitle,
+.process .processBody .processText .orderTabTwo .tabTitle {
+  display: block;
+  line-height: 40px;
+}
+.process .processBody .processText .orderTab .tabTitle a,
+.process .processBody .processText .orderTabTwo .tabTitle a {
+  color: #2CB82C;
+  padding: 0 5px;
+}
+.process .processBody .processText .orderTab .tabTitle a:hover,
+.process .processBody .processText .orderTabTwo .tabTitle a:hover {
+  text-decoration: underline;
+}
+.process .processBody .processText .orderTab .odbox,
+.process .processBody .processText .orderTabTwo .odbox {
+  margin-bottom: 25px;
+}
+.process .processBody .processText .orderTab .tab,
+.process .processBody .processText .orderTabTwo .tab {
+  padding: 0 30px;
+  width: 100%;
+  clear: both;
+  padding-top: 25px;
+}
+.process .processBody .processText .orderTab .tab div,
+.process .processBody .processText .orderTabTwo .tab div {
+  float: left;
+  height: 100%;
+}
+.process .processBody .processText .orderTab .tab .td4,
+.process .processBody .processText .orderTabTwo .tab .td4 {
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+.process .processBody .processText .orderTab .tab .td4 table,
+.process .processBody .processText .orderTabTwo .tab .td4 table {
+  width: 100%;
+  height: 70px;
+}
+.process .processBody .processText .orderTab .tab .red,
+.process .processBody .processText .orderTabTwo .tab .red {
+  color: #ff4012;
+  font-style: normal;
+  margin-left: 20px;
+}
+.process .processBody .processText .orderTab .tab .td1,
+.process .processBody .processText .orderTabTwo .tab .td1,
+.process .processBody .processText .orderTab .tab .td2,
+.process .processBody .processText .orderTabTwo .tab .td2,
+.process .processBody .processText .orderTab .tab .td3,
+.process .processBody .processText .orderTabTwo .tab .td3,
+.process .processBody .processText .orderTab .tab .td5,
+.process .processBody .processText .orderTabTwo .tab .td5 {
+  text-align: center;
+  line-height: 70px!important;
+}
+.process .processBody .processText .orderTab .tab .td1,
+.process .processBody .processText .orderTabTwo .tab .td1 {
+  width: 285px;
+  height: 100%;
+}
+.process .processBody .processText .orderTab .tab .td1 span,
+.process .processBody .processText .orderTabTwo .tab .td1 span {
+  display: block;
+}
+.process .processBody .processText .orderTab .tab .td1 table,
+.process .processBody .processText .orderTabTwo .tab .td1 table {
+  height: 70px;
+}
+.process .processBody .processText .orderTab .tab .td1 .img,
+.process .processBody .processText .orderTabTwo .tab .td1 .img {
+  width: 125px;
+  height: 70px;
+  display: block;
+  float: left;
+}
+.process .processBody .processText .orderTab .tab .td1 .img img,
+.process .processBody .processText .orderTabTwo .tab .td1 .img img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.process .processBody .processText .orderTab .tab .td1 .name,
+.process .processBody .processText .orderTabTwo .tab .td1 .name {
+  width: 140px;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 20px;
+  text-align: center;
+  float: left;
+  vertical-align: middle;
+  display: table-cell;
+}
+.process .processBody .processText .orderTab .tab .td2,
+.process .processBody .processText .orderTabTwo .tab .td2 {
+  height: 100%;
+  width: 200px;
+}
+.process .processBody .processText .orderTab .tab .td3,
+.process .processBody .processText .orderTabTwo .tab .td3 {
+  height: 100%;
+  width: 193px;
+}
+.process .processBody .processText .orderTab .tab .td4,
+.process .processBody .processText .orderTabTwo .tab .td4 {
+  height: 100%;
+  width: 200px;
+}
+.process .processBody .processText .orderTab .tab .td5,
+.process .processBody .processText .orderTabTwo .tab .td5 {
+  color: #FF4012;
+  height: 100%;
+  width: 200px;
+  font-size: 18px;
+}
+.process .processBody .processText .orderTab .xiaoJiwei,
+.process .processBody .processText .orderTabTwo .xiaoJiwei {
+  text-align: right;
+  margin: 15px 0;
+  clear: both;
+  font-size: 14px;
+}
+.process .processBody .processText .orderTab .xiaoJiwei .a2,
+.process .processBody .processText .orderTabTwo .xiaoJiwei .a2,
+.process .processBody .processText .orderTab .xiaoJiwei .a3,
+.process .processBody .processText .orderTabTwo .xiaoJiwei .a3 {
+  font-size: 12px;
+  color: #999;
+}
+.process .processBody .processText .orderTab .xiaoJiwei i,
+.process .processBody .processText .orderTabTwo .xiaoJiwei i {
+  font-style: normal;
+  color: #FF4012;
+  font-size: 20px;
+}
+.process .processBody .processText .orderTab .xiaoJiwei .a2,
+.process .processBody .processText .orderTabTwo .xiaoJiwei .a2 {
+  margin-right: 10px;
+}
+.process .processBody .processText .orderTab .xiaoJiwei .a3,
+.process .processBody .processText .orderTabTwo .xiaoJiwei .a3 {
+  margin-right: 20px;
+}
+.process .processBody .processText .orderTab .xiaoJiwei em,
+.process .processBody .processText .orderTabTwo .xiaoJiwei em {
+  font-style: normal;
+}
+.process .sub {
+  margin: 0 auto;
+  background: #e6e6e6;
+  overflow: hidden;
+  margin-top: 20px;
+  display: block;
+  margin-top: 25px;
+  line-height: 50px;
+}
+.process .sub .getRedeem {
+  color: #2cb82c;
+  margin-left: 25px;
+  font-size: 14px;
+}
+.process .sub .save {
+  display: block;
+  float: right;
+  height: 50px;
+  text-align: center;
+  width: 150px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 2px;
+  background: #FF4012;
+}
+.process .sub .cardNum {
+  cursor: pointer;
+  color: #2CB82C;
+  float: right;
+  height: 35px;
+  font-size: 14px;
+  margin-right: 40px;
+}
+.process .sub .cardNum:hover {
+  border-bottom: 1px solid #2CB82C;
+}
+.process .sub .return {
+  display: block;
+  cursor: pointer;
+  float: right;
+  font-size: 12px;
+  color: #999;
+  text-decoration: underline;
+  margin-right: 40px;
+}
+.process .sub p {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+.process .sub p span {
+  color: #ff1012;
+  font-size: 18px;
+}
+.process .orderHint {
+  margin-bottom: 7px;
+}
+.process .orderHint img {
+  margin-right: 5px;
+  margin-top: -3px;
+}
+.process .orderHint .payHint {
+  font-size: 14px;
+  display: inline-block;
+  color: #ff4012;
+}
+.process .kuhao {
+  font-size: 12px;
+  color: #2cb82c;
+}
+.process .rTips {
+  width: 225px;
+  height: 62px;
+  position: fixed;
+  z-index: 999999;
+  top: 33%;
+  left: 49%;
+  margin-left: -100px;
+  margin-top: -31px;
+  line-height: 62px;
+  background: #000;
+  filter: alpha(opacity=50);
+  /*ie*/
+  -moz-opacity: 0.5;
+  -o-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  display: none;
+}
+.process #order-sucess-page {
+  width: 1200px;
+}
+.process #order-sucess-page .orderName {
+  clear: both;
+  margin-left: 84px;
+  font-size: 14px;
+  color: #666;
+}
+.process #order-sucess-page .orderName .tt {
+  float: left;
+  width: 70px;
+}
+.process #order-sucess-page .orderName .order-courseName {
+  float: left;
+  max-width: 900px;
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+  height: auto;
+}
+.process #order-sucess-page .orderName .order-courseName span {
+  margin-right: 30px;
+  font-size: 14px;
+  color: #999;
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+}
+.process #order-sucess-page .orderName .spread {
+  display: none;
+  cursor: pointer;
+  float: right;
+  width: 19px;
+  height: 19px;
+  background: url("../images/order/orderC1.png") center center no-repeat;
+}
+.process #order-sucess-page .orderName .active {
+  background: url("../images/order/orderC2.png") center center no-repeat;
+}
+.process #order-sucess-page .order-info {
+  background-color: #fff;
+  padding: 27px 30px;
+}
+.process #order-sucess-page .order-info .order-success-icon {
+  float: left;
+  margin-right: 30px;
+}
+.process #order-sucess-page .order-info .order-success-info {
+  float: left;
+}
+.process #order-sucess-page .order-info .order-success-info .order-hint {
+  font-size: 22px;
+  color: #333;
+  display: block;
+  margin-bottom: 13px;
+}
+.process #order-sucess-page .order-info .order-success-info p {
+  font-size: 14px;
+  color: #666;
+  display: inline-block;
+}
+.process #order-sucess-page .order-info .order-success-prices {
+  float: right;
+  margin-top: 16px;
+}
+.process #order-sucess-page .order-info .order-success-prices i {
+  font-style: normal;
+  font-size: 22px;
+  color: #ff4012;
+}
+.process #order-sucess-page .order-info .order-success-prices .prices-hint {
+  font-size: 16px;
+  color: #666;
+}
+.process #order-sucess-page .order-info .order-success-prices .pay-prices {
+  color: #ff4012;
+  font-size: 22px;
+}
+.process #order-sucess-page .order-ways {
+  background-color: #fff;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+.process #order-sucess-page .order-ways .order-ways-hint {
+  font-size: 16px;
+  color: #333;
+  padding: 29px 0 18px 30px;
+}
+.process #order-sucess-page .order-ways .pay-ways {
+  background-color: #fafafa;
+  height: 114px;
+  padding: 0 30px;
+}
+.process #order-sucess-page .order-ways .pay-ways .order-ways-hint {
+  font-size: 16px;
+  color: #333;
+}
+.process #order-sucess-page .order-ways .pay-ways span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #eee;
+  margin: 30px 30px 0 0;
+  cursor: pointer;
+}
+.process #order-sucess-page .order-ways .pay-ways span .selectImg,
+.process #order-sucess-page .order-ways .pay-ways span .selectImg1 {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.process #order-sucess-page .order-ways .pay-ways span.select {
+  border: 1px solid #2cb82c;
+}
+.process #order-sucess-page .order-ways .pay-ways span.select .selectImg {
+  display: block;
+}
+.process #order-sucess-page .order-ways .pay-ways span.select .selectImg1 {
+  display: none;
+}
+.process #order-sucess-page .order-ways .pay-ways .unionPay {
+  position: relative;
+  z-index: 172;
+}
+.process #order-sucess-page .order-ways .pay-ways .unionPay:hover {
+  border: 1px solid #2cb82c;
+}
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount {
+  position: absolute;
+  left: -1px;
+  top: 50px;
+  background-color: #fff;
+  width: 720px;
+  padding: 25px 0 5px 25px;
+  border: 1px solid #2cb82c;
+  display: none;
+  z-index: -1;
+}
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  position: relative;
+  width: 118px;
+  height: 52px;
+}
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount li img:first-child {
+  width: 116px;
+  height: 50px;
+}
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount li .selectImg,
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount li .selectImg1 {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount .more em {
+  font-style: normal;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  line-height: 50px;
+}
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount li.select {
+  border: 1px solid #2cb82c;
+}
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount li.select .selectImg,
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount li.select .selectImg1 {
+  display: block;
+}
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount .selectImg,
+.process #order-sucess-page .order-ways .pay-ways .unionPay .unionPayAccount .selectImg1 {
+  display: none;
+}
+.process #order-sucess-page .order-ways .order-pay-btn {
+  margin: 40px 0 0 30px;
+  width: 108px;
+  height: 42px;
+  background-color: #2cb82c;
+  color: #fff;
+  font-size: 16px;
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+}
+.process #order-sucess-page .order-ways .pay-protocol {
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.process #order-sucess-page .order-ways .pay-protocol a:hover {
+  text-decoration: underline;
+}
+.process #order-sucess-page .order-ways .pay-protocol em {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  background: url("/web/images/130/select14_normal.png") no-repeat center center;
+}
+.process #order-sucess-page .order-ways .pay-protocol em.select {
+  background: url("/web/images/130/select14_click.png") no-repeat center center;
+}
+.process #order-sucess-page .order-ways .pay-protocol span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -6px;
+  cursor: pointer;
+}
+.process #order-sucess-page .order-ways .pay-protocol .pay-protocolBox {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+.process #order-sucess-page .order-ways .pay-protocol .pay-protocolBox .pay-protocol-hint {
+  font-size: 12px;
+  color: #333;
+  margin: -6px 0 0 5px;
+}
+.process #order-sucess-page .order-ways .pay-protocol .pay-protocolBox .boxuegu-protocol {
+  color: #2cb82c;
+  cursor: pointer;
+  margin-top: -9px;
+  vertical-align: text-bottom;
+}
+.identity {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.identity .identityMess {
+  display: block;
+  position: fixed;
+  width: 600px;
+  z-index: 99;
+  margin-left: -300px;
+  top: 30%;
+  left: 50%;
+  background: #fff;
+}
+.identity .identityMess .title {
+  display: block;
+  padding: 0 20px;
+  background: #fafafa;
+  height: 52px;
+  width: 100%;
+  line-height: 52px;
+}
+.identity .identityMess .title span {
+  float: left;
+  font-weight: bold;
+}
+.identity .identityMess .title .close {
+  font-size: 12px;
+  float: right;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.identity .identityMess .idenContent {
+  padding: 10px 20px 40px;
+}
+.identity .identityMess .idenContent .tip {
+  font-size: 14px;
+  color: #999;
+}
+.identity .identityMess .idenContent .name {
+  margin-top: 30px;
+}
+.identity .identityMess .idenContent .shenfen {
+  margin-top: 20px;
+}
+.identity .identityMess .idenContent .fL {
+  text-align: right;
+  float: left;
+  line-height: 36px;
+  font-size: 14px;
+  color: #666;
+}
+.identity .identityMess .idenContent .fL i {
+  color: red;
+  font-style: normal;
+  display: inline-block;
+}
+.identity .identityMess .idenContent .fL span {
+  margin-left: 4px;
+  display: inline-block;
+}
+.identity .identityMess .idenContent .fR {
+  float: left;
+  margin-left: 20px;
+}
+.identity .identityMess .idenContent .fR input {
+  font-size: 14px;
+  padding-left: 20px;
+  height: 36px;
+  width: 260px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+.identity .identityMess .idenContent .fR .warning {
+  display: none;
+  font-size: 14px;
+  color: #FF4012;
+  line-height: 30px;
+  padding-left: 20px;
+  background: url("../images/icons/tanhao.png") no-repeat left center;
+  margin-left: 10px;
+}
+.identity .identityMess .startIden {
+  display: block;
+  clear: both;
+  margin: 30px auto 0;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 40px;
+  width: 90px;
+  color: #fff;
+  background: #2CB82C;
+  font-size: 14px;
+  cursor: pointer;
+}
+.identity .identityMess .startIden:hover {
+  background: #28A528;
+}
+.protocol-tip {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: none;
+}
+.protocol-tip .tip-content {
+  width: 434px;
+  height: 225px;
+  position: absolute;
+  left: 50%;
+  margin-left: -217px;
+  margin-top: 15%;
+}
+.protocol-tip .tip-content .tip-top {
+  background-color: #fafafa;
+  height: 52px;
+  padding: 20px;
+}
+.protocol-tip .tip-content .tip-top span {
+  font-size: 18px;
+  color: #333;
+  display: inline-block;
+  margin-top: -5px;
+}
+.protocol-tip .tip-content .tip-top .tip-close {
+  float: right;
+  cursor: pointer;
+}
+.protocol-tip .tip-content .tip-bottom {
+  padding: 20px;
+  background-color: #fff;
+}
+.protocol-tip .tip-content .tip-bottom span {
+  font-size: 16px;
+  color: #333;
+  display: inline-block;
+  margin-top: 26px;
+}
+.protocol-tip .tip-content .tip-bottom .kuhao1 {
+  color: #2cb82c;
+}
+.protocol-tip .tip-content .tip-bottom .boxuegu-protocol2 {
+  font-size: 16px;
+  color: #2cb82c;
+  cursor: pointer;
+}
+.protocol-tip .tip-content .tip-bottom .boxuegu-protocol2:hover {
+  text-decoration: underline;
+}
+.protocol-tip .tip-content .tip-bottom .tip-btn {
+  float: right;
+  margin-top: 48px;
+  color: #fff;
+  background-color: #2cb82c;
+  font-size: 16px;
+  line-height: 43px;
+  height: 43px;
+  width: 95px;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.protocol-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  display: none;
+}
+.protocol-shadow .pay-protocol-text {
+  width: 580px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -290px;
+  margin-top: 80px;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-top {
+  font-size: 18px;
+  color: #333;
+  padding: 12px 20px;
+  height: 52px;
+  background-color: #fafafa;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-top p {
+  float: left;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-top img {
+  float: right;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content {
+  padding: 0 30px 30px;
+  height: 568px;
+  overflow: auto;
+  word-break: break-all;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content p {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  margin-top: 12px;
+  text-indent: 2px;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content p:first-child {
+  margin-top: 27px;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content .indent {
+  font-weight: bold;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content span {
+  display: block;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content .youxiang {
+  color: #2cb82c;
+  display: inline-block;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content em {
+  font-style: normal;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content h2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 15px 0;
+}
+.pay-result1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  display: none;
+}
+.pay-result1 .rTips {
+  width: 225px;
+  height: 62px;
+  position: fixed;
+  z-index: 9999;
+  top: 47%;
+  left: 49%;
+  margin-left: -100px;
+  margin-top: -31px;
+  line-height: 62px;
+  background: #000;
+  filter: alpha(opacity=50);
+  /*ie*/
+  -moz-opacity: 0.5;
+  -o-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  display: none;
+}
+.pay-result1 .pay-result-content {
+  position: absolute;
+  width: 420px;
+  left: 50%;
+  top: 20%;
+  margin-left: -210px;
+  padding: 20px 20px 57px;
+  background-color: #fff;
+}
+.pay-result1 .pay-result-content .pay-result1-close {
+  float: right;
+  cursor: pointer;
+}
+.pay-result1 .pay-result-content .pay-result-text {
+  width: 305px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  line-height: 26px;
+  margin: 39px auto 0;
+}
+.pay-result1 .pay-result-content .pay-success-btn {
+  width: 119px;
+  height: 44px;
+  background-color: #2cb82c;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 25px auto 12px;
+}
+.pay-result1 .pay-result-content .pay-result-hint {
+  text-align: center;
+}
+.pay-result1 .pay-result-content .pay-result-hint span,
+.pay-result1 .pay-result-content .pay-result-hint a {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+}
+.pay-result1 .pay-result-content .pay-result-hint .kefu {
+  margin: 0 3px;
+  color: #2cb82c;
+}
+.pay-result2,
+.userShip {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  display: none;
+}
+.pay-result2 .pay-result2-content,
+.userShip .pay-result2-content {
+  position: absolute;
+  width: 354px;
+  left: 50%;
+  top: 20%;
+  margin-left: -210px;
+  padding: 20px 20px 61px;
+  background-color: #fff;
+}
+.pay-result2 .pay-result2-content .pay-result2-close,
+.userShip .pay-result2-content .pay-result2-close {
+  float: right;
+  cursor: pointer;
+}
+.pay-result2 .pay-result2-content .pay-result2-hint,
+.userShip .pay-result2-content .pay-result2-hint {
+  text-align: center;
+  margin-top: 43px;
+}
+.pay-result2 .pay-result2-content .pay-result2-hint span,
+.userShip .pay-result2-content .pay-result2-hint span {
+  font-size: 16px;
+  color: #333;
+}
+.pay-result2 .pay-result2-content .pay-result2-hint img,
+.userShip .pay-result2-content .pay-result2-hint img {
+  margin-right: 5px;
+}
+.pay-result2 .pay-result2-content .pay-result2-btn,
+.userShip .pay-result2-content .pay-result2-btn,
+.pay-result2 .pay-result2-content .userShip-btn,
+.userShip .pay-result2-content .userShip-btn,
+.pay-result2 .pay-result2-content .userShip-cancleBtn,
+.userShip .pay-result2-content .userShip-cancleBtn {
+  width: 94px;
+  height: 42px;
+  background-color: #2cb82c;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+  margin: 14px auto 0;
+  font-size: 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.pay-result2 .pay-result2-content .userShip-btn,
+.userShip .pay-result2-content .userShip-btn,
+.pay-result2 .pay-result2-content .userShip-cancleBtn,
+.userShip .pay-result2-content .userShip-cancleBtn {
+  display: inline-block;
+}
+.pay-result2 .pay-result2-content .userShip-btn,
+.userShip .pay-result2-content .userShip-btn {
+  margin-right: 20px;
+  margin-left: 55px;
+}
+.processrrTips {
+  width: 212px;
+  height: 60px;
+  position: fixed;
+  z-index: 9999;
+  top: 45%;
+  left: 50%;
+  margin-left: -106px;
+  margin-top: -31px;
+  line-height: 60px;
+  background: #000;
+  filter: alpha(opacity=50);
+  /*ie*/
+  -moz-opacity: 0.4;
+  -o-opacity: 0.4;
+  -webkit-opacity: 0.4;
+  opacity: 0.4;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  display: none;
+}
